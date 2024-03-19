@@ -1,0 +1,16 @@
+﻿@model HomeViewModel
+
+<partial name="_Carousel"/>
+
+
+
+
+@* exibindo produtos preferidos
+<h2>Os mais comprados</h2>
+    <div class="row">
+        @foreach(var produto in Model.ProdutosPreferidos)
+        {
+            <partial name="_ProdutosResumo" for="@produto" />
+        }
+    </div>
+*@

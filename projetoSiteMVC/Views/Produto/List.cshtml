@@ -1,0 +1,15 @@
+﻿@model ProdutoListViewModel
+<div>
+    <h2 class="text-center fw-bold pb-1"> @Model.CategoriaAtual </h2>
+</div>
+
+<div class="container py-5 d-flex justify-content-center">
+    <div class="row">
+
+    @foreach (var produto in Model.Produtos)
+    {
+        <partial name="_ProdutosResumo" for="@produto" />
+    }
+    </div>
+</div>
+
